@@ -6,11 +6,11 @@
 
 # Building 
 1.  install the Eigen3
-2.  mkdir build
-    cd build 
-    cmake .. 
+2.  mkdir build \
+    cd build \
+    cmake .. \
     make -j8
 
 # Run
-cd to ESKF_toy/bin
+cd to ESKF_toy/bin \
 ./ESKF_toy ../dataset/gentleWave/ ../evaluation/result/
