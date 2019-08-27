@@ -156,6 +156,10 @@ if __name__=="__main__":
         print "absolute_translational_error.std %f m"%np.std(trans_error)
         print "absolute_translational_error.min %f m"%np.min(trans_error)
         print "absolute_translational_error.max %f m"%np.max(trans_error)
+
+        print "absolute_translational_error.x-axis %f m" %np.mean(np.abs(first_xyz[0,:] - second_xyz[0,:]))
+        print "absolute_translational_error.y-axis %f m" %np.mean(np.abs(first_xyz[1,:] - second_xyz[1,:]))
+        print "absolute_translational_error.z-axis %f m" %np.mean(np.abs(first_xyz[2,:] - second_xyz[2,:]))
     else:
         print "%f"%np.sqrt(np.dot(trans_error,trans_error) / len(trans_error))
 
